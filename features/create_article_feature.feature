@@ -1,3 +1,4 @@
+Feature: 
 As a publisher
 In order to add relevant content to my news service
 I would like to be able to create articles

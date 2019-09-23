@@ -1,3 +1,10 @@
+## User Story
+```
+As a visitor, 
+when I visit the application's landing page,
+I would like to see a list of articles
+```
+
 # README
 
 This README would normally document whatever steps are necessary to get the

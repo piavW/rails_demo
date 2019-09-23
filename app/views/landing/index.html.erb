@@ -1,2 +1,4 @@
-<h1></h1>
-<p></p>
+<% @articles.each do |article| %>
+<%= article.title %>
+<%= article.content %>
+<%end%>

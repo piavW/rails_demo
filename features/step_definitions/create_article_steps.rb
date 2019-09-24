@@ -3,7 +3,7 @@ visit root_path
 end
 
 When("I click {string} link") do |string|
-    expect(page).to have_link link
+    expect(page).to have_content string
 end
 
 When("I fill in {string} with {string}") do |string, string2|

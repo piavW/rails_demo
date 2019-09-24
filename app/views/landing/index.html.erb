@@ -1,10 +1,17 @@
-<ul>
-<% @articles.each do |article| %>
-<li>
-<%= article.title %>
-<%= article.content %>
-</li>
-<%end%>
-</ul>
+<div>
+<h3>Write your new article here and press the button to submitt</h3>
+    <input id ="new-article-titel" placeholder="title here" type="input">
+    <br>
+    <input id="new-article-text" placeholder="text here" type="input"> 
+</div>
 
-<button class="create article">New Article</button>
+<button class="create article" type="submit">New Article</button>
+<h1>Articles shows below</h1>
+    <ul>
+    <% @articles.each do |article| %>
+    <li>
+    <%= article.title %>
+    <%= article.content %>
+    </li>
+    <%end%>
+    </ul>

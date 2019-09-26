@@ -1,11 +1,11 @@
 <div>
-<h3>Write your new article here and press the button to submitt</h3>
+<h3>Write your new article here and press the button to submit</h3>
     <input id ="new-article-titel" placeholder="title here" type="input">
     <br>
     <input id="new-article-text" placeholder="text here" type="input"> 
 </div>
 
-<button class="create article" type="submit">New Article</button>
+<%= link_to "New Article", new_article_path%>
 <h1>Articles shows below</h1>
     <ul>
     <% @articles.each do |article| %>

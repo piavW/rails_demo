@@ -3,11 +3,11 @@ visit root_path
 end
 
 When("I click {string} link/button") do |string|
-   click_on(string)
+   click_on string
 end
 
 When("I fill in {string} with {string}") do |string, string2|
-    fill_in("title", :with => string, :with => string2)
+    fill_in string, :with => string2
 end
 
 Then("I should be on {string} page") do |string|

@@ -1,17 +1,4 @@
-<div>
-<h3>Write your new article here and press the button to submit</h3>
-    <input id ="new-article-titel" placeholder="title here" type="input">
-    <br>
-    <input id="new-article-text" placeholder="text here" type="input"> 
-</div>
 
-<%= link_to "New Article", new_article_path%>
-<h1>Articles shows below</h1>
-    <ul>
-    <% @articles.each do |article| %>
-    <li>
-    <%= article.title %>
-    <%= article.content %>
-    </li>
-    <%end%>
-    </ul>
+<h3> Hello World</h3>
+<p>To view and write articles, click the link below</p>
+<%= link_to 'Articles', controller: 'articles' %>

@@ -5,8 +5,8 @@ Feature: Log in feature
 
     Background: Articles and user already exist
 		Given following users exist
-			| name | email          | password |
-			| Anna | annna@email.se | abcd1234 |
+			| email          | password |
+			| annna@email.se | abcd1234 |
 		And following article exist
 			| title              | text                                               | 
 			| To be or not to be | This is an article, the page is built using Rails. |

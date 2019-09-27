@@ -1,9 +1,11 @@
 Given("following users exist") do |table|
-# table is a Cucumber::MultilineArgument::DataTable
-pending # Write code here that turns the phrase above into concrete actions
+    table.hashes.each do |user_hash|
+        FactoryBot.create(:user, user_hash)
+      end
 end
 
-Given("the following article exists") do |table|
-# table is a Cucumber::MultilineArgument::DataTable
-pending # Write code here that turns the phrase above into concrete actions
+Given("following article exist") do |table|
+    table.hashes.each do |article_hash|
+        FactoryBot.create(:article, article_hash)
+    end
 end

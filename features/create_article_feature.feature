@@ -28,4 +28,7 @@ Feature: Create articles
     And I click "Create Article" button
     Then I should see "Title can't be blank"
 
-  # [WIP] Write another sad path scenario you can think of
+Scenario: Publisher doesn't input text content for the article [Sad Path]
+  When I fill in "Title" with "Here is my Title"
+  And I click "Create Article" button
+  Then I should see "Text can't be blank"

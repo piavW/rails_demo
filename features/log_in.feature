@@ -18,3 +18,26 @@ Feature: Log in feature
         And I fill in "Password" with "abc12345"
 		And I click on "Log in"
 		Then I should see "Signed in successfully."
+
+	Scenario: User can't log in if email is omitted [Sad Path]
+		When I fill in "Password" with "abc12345"
+		And I click on "Log in"
+		Then I should see "Invalid Email or password."
+
+	Scenario: User can't log in if password is omitted [Sad Path]
+		When I fill in "Email" with "annna@email.se"
+		And I click on "Log in"
+		Then I should see "Invalid Email or password."
+
+	Scenario: User can't log in if password is wrong [Sad Path]
+			When I fill in "Email" with "annna@email.se"
+			And I fill in "Password" with "12345678"
+			And I click on "Log in"
+			Then I should see "Invalid Email or password."
+
+		Scenario: User can't log in if email is wrong [Sad Path]
+			When I fill in "Email" with "wrong@email.se"
+			And I fill in "Password" with "12345678"
+			And I click on "Log in"
+			Then I should see "Invalid Email or password."
+

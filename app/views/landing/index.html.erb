@@ -1,8 +1,3 @@
-<ul>
-<% @articles.each do |article| %>
-<li>
-<%= article.title %>
-<%= article.content %>
-</li>
-<%end%>
-</ul>
+<h3> Hello World</h3>
+<p>To view and write articles, click the link below</p>
+<%= link_to 'Articles', controller: 'articles' %>

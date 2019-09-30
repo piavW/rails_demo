@@ -9,7 +9,16 @@ Feature: Create articles
   In order to add relevant content to my news service
   I would like to be able to create articles
 
-  Background:
+  Background:	
+    Given following users exist
+			| email          | password |
+			| annna@email.se | abc12345 |
+		Given I visit the "landing" page
+    And I click on "Articles"
+    And I fill in "Email" with "annna@email.se"
+    And I fill in "Password" with "abc12345"
+		And I click on "Log in"
+		Then I should see "Signed in successfully."
     Given I visit the "landing" page
     And I click on "Article"
     And I click on "New Article"

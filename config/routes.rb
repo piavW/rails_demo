@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'landing/index'
+  devise_for :users, controllers: {
+    omniauth_callbacks: :omniauth_callbacks
+  }
+  root controller: :landing, action: :index 
   resources :articles
-  root controller: :landing, action: :index
+  resources :users
 end

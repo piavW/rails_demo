@@ -10,6 +10,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth-facebook'
+gem 'devise'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -17,7 +18,6 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'cucumber-rails', require:false
   gem 'database_cleaner'
-  gem 'devise'
   gem 'pry-rails'
 end
 

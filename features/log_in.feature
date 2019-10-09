@@ -14,8 +14,8 @@ Feature: Log in feature
         And I click on "Articles"
 	
 	Scenario: User can log in to the application [Happy Path] 
-        When I fill in "Email" with "annna@email.se"
-        And I fill in "Password" with "abc12345"
+		When I fill in "Email" with "annna@email.se"
+		And I fill in "Password" with "abc12345"
 		And I click on "Log in"
 		Then I should see "Signed in successfully."
 
